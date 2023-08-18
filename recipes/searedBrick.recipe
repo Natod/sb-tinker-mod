@@ -1,0 +1,11 @@
+{
+  "input" : [
+    { "item" : "clay", "count" : 1 },
+    { "item" : "sand", "count" : 1 }
+  ],
+  "output" : {
+    "item" : "searedBrick",
+    "count" : 1
+  },
+  "groups" : [ "craftingfurnace", "ingredients", "all" ]
+}

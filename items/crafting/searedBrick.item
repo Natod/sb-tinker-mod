@@ -1,0 +1,10 @@
+{
+  "itemName" : "searedBrick",
+  "price" : 5,
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "searedBrick.png",
+  "description" : "A durable brick used to build the smeltery.",
+  "shortdescription" : "Seared Brick",
+  "itemTags" : [ "reagent" ]
+}
