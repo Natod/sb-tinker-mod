@@ -1,0 +1,10 @@
+{
+  "itemName" : "moltenGold",
+  "rarity" : "Common",
+  "category" : "liquid",
+  "inventoryIcon" : "moltenGoldIcon.png",
+  "shortdescription" : "Molten Gold",
+  "description" : "A measure of liquid gold.",
+
+  "liquid" : "moltenGold"
+}
