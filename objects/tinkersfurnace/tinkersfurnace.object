@@ -1,0 +1,58 @@
+{
+  "objectName" : "tinkersfurnace",
+  "colonyTags" : ["misc"],
+  "rarity" : "Uncommon",
+  "description" : "A furnace... but better (trust me)",
+  "shortdescription" : "Tinker's Furnace",
+  "race" : "generic",
+  "category" : "decorative",
+  "price" : 510,
+
+  "apexDescription" : "Oh my I sure do love cooking my bars!",
+  "avianDescription" : "Oh my I sure do love cooking my bars!",
+  "floranDescription" : "Oh my I sure do love cooking my bars!",
+  "glitchDescription" : "Oh my I sure do love cooking my bars!",
+  "humanDescription" : "Oh my I sure do love cooking my bars!",
+  "hylotlDescription" : "Oh my I sure do love cooking my bars!",
+  "novakidDescription" : "Oh my I sure do love cooking my bars!",
+
+  "lightColor" : [24, 68, 109],
+  "flickerDistance" : 0.5,
+  "flickerStrength" : 0.01,
+
+  "inventoryIcon" : "tinkersfurnaceicon.png",
+  "orientations" : [
+    { 
+      "imageLayers" : [ { "image" : "tinkersfurnace.png:<color>.<frame>", "fullbright" : true } ],
+      "flipImages" : true,
+      "direction" : "left",
+      
+      "imagePosition" : [-24, 0],
+      "frames" : 8,
+      "animationCycle" : 0.8,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "solid",
+      "collisionSpaces" : [ [-3, 0], [-2, 0], [-1, 0], [0, 0], [1, 0], [2, 0] ]
+    },
+    { 
+      "imageLayers" : [ { "image" : "tinkersfurnace.png:<color>.<frame>", "fullbright" : true } ],
+      "direction" : "right",
+      
+      "imagePosition" : [-24, 0],
+      "frames" : 8,
+      "animationCycle" : 0.8,
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ],
+      "collision" : "solid",
+      "collisionSpaces" : [ [-3, 0], [-2, 0], [-1, 0], [0, 0], [1, 0], [2, 0] ]
+    }
+  ],
+
+  "soundEffect" : "/sfx/objects/spookycauldron.ogg",
+  "soundEffectRangeMultiplier" : 1,
+
+  "scripts" : [ "tinkersfurnace.lua" ]
+}
