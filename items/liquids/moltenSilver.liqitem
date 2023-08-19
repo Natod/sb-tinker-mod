@@ -1,0 +1,10 @@
+{
+  "itemName" : "moltenSilver",
+  "rarity" : "Common",
+  "category" : "liquid",
+  "inventoryIcon" : "moltenSilverIcon.png",
+  "shortdescription" : "Molten Silver",
+  "description" : "A measure of liquid silver.",
+
+  "liquid" : "moltenSilver"
+}

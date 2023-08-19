@@ -1,0 +1,10 @@
+{
+  "itemName" : "moltenFerozium",
+  "rarity" : "Common",
+  "category" : "liquid",
+  "inventoryIcon" : "moltenFeroziumIcon.png",
+  "shortdescription" : "Molten Ferozium",
+  "description" : "A measure of liquid ferozium.",
+
+  "liquid" : "moltenFerozium"
+}

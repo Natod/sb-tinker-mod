@@ -1,0 +1,10 @@
+{
+  "itemName" : "moltenViolium",
+  "rarity" : "Common",
+  "category" : "liquid",
+  "inventoryIcon" : "moltenVioliumIcon.png",
+  "shortdescription" : "Molten Violium",
+  "description" : "A measure of liquid violium.",
+
+  "liquid" : "moltenViolium"
+}

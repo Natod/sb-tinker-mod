@@ -1,0 +1,10 @@
+{
+  "itemName" : "moltenDurasteel",
+  "rarity" : "Common",
+  "category" : "liquid",
+  "inventoryIcon" : "moltenDurasteelIcon.png",
+  "shortdescription" : "Molten Durasteel",
+  "description" : "A measure of liquid durasteel.",
+
+  "liquid" : "moltenDurasteel"
+}

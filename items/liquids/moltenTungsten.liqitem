@@ -1,0 +1,10 @@
+{
+  "itemName" : "moltenTungsten",
+  "rarity" : "Common",
+  "category" : "liquid",
+  "inventoryIcon" : "moltenTungstenIcon.png",
+  "shortdescription" : "Molten Tungsten",
+  "description" : "A measure of liquid tungsten.",
+
+  "liquid" : "moltenTungsten"
+}

@@ -1,0 +1,10 @@
+{
+  "itemName" : "moltenSolarium",
+  "rarity" : "Common",
+  "category" : "liquid",
+  "inventoryIcon" : "moltenSolariumIcon.png",
+  "shortdescription" : "Molten Solarium",
+  "description" : "A measure of liquid solarium.",
+
+  "liquid" : "moltenSolarium"
+}

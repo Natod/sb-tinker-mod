@@ -1,0 +1,10 @@
+{
+  "itemName" : "moltenIron",
+  "rarity" : "Common",
+  "category" : "liquid",
+  "inventoryIcon" : "moltenIronIcon.png",
+  "shortdescription" : "Molten Iron",
+  "description" : "A measure of liquid iron.",
+
+  "liquid" : "moltenIron"
+}

@@ -1,0 +1,10 @@
+{
+  "itemName" : "moltenTitanium",
+  "rarity" : "Common",
+  "category" : "liquid",
+  "inventoryIcon" : "moltenTitaniumIcon.png",
+  "shortdescription" : "Molten Titanium",
+  "description" : "A measure of liquid titanium.",
+
+  "liquid" : "moltenTitanium"
+}

@@ -1,0 +1,10 @@
+{
+  "itemName" : "moltenDiamond",
+  "rarity" : "Common",
+  "category" : "liquid",
+  "inventoryIcon" : "moltenDiamondIcon.png",
+  "shortdescription" : "Molten Diamond",
+  "description" : "A measure of liquid diamond.",
+
+  "liquid" : "moltenDiamond"
+}

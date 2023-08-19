@@ -1,0 +1,10 @@
+{
+  "itemName" : "moltenCopper",
+  "rarity" : "Common",
+  "category" : "liquid",
+  "inventoryIcon" : "moltenCopperIcon.png",
+  "shortdescription" : "Molten Copper",
+  "description" : "A measure of liquid copper.",
+
+  "liquid" : "moltenCopper"
+}

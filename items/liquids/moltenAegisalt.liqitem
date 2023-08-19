@@ -1,0 +1,10 @@
+{
+  "itemName" : "moltenAegisalt",
+  "rarity" : "Common",
+  "category" : "liquid",
+  "inventoryIcon" : "moltenAegisaltIcon.png",
+  "shortdescription" : "Molten Aegisalt",
+  "description" : "A measure of liquid aegisalt.",
+
+  "liquid" : "moltenAegisalt"
+}
