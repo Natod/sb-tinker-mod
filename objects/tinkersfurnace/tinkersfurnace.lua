@@ -1,16 +1,18 @@
 function init()
-  --object.setInteractive(true)
+  --object.setInteractive(true)playsound
   object.setSoundEffectEnabled(false)
 end
 
-local eoiewg = false
+--local number = 1
+
+local playsound = false
 
 function onInteraction(interactSource)
   --world.sendEntityMessage(interactSource.sourceId, "deployMech")
   --animator.playSound("/sfx/cinematics/ship_upgrade/captain_gripe.ogg")
   --object.smash()
-  eoiewg = not eoiewg
-  object.setSoundEffectEnabled(eoiewg)
+  playsound = not playsound
+  object.setSoundEffectEnabled(playsound)
   --local reason = "Steam Deck not detected"
   --return { "ShowPopup", { title = "Activation Failed!", message = string.format("^red;Epic failure: %s.", reason), sound = "/sfx/cinematics/ship_upgrade/captain_gripe.ogg"} }
 end
