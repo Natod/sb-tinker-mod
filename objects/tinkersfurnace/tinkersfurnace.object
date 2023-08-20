@@ -3,9 +3,9 @@
   "colonyTags" : ["misc"],
   "rarity" : "Uncommon",
   "description" : "A furnace... but better (trust me)",
-  "shortdescription" : "Tinker's Furnace",
+  "shortdescription" : "Tinkers' Furnace",
   "race" : "generic",
-  "category" : "decorative",
+  "category" : "crafting",
   "price" : 510,
 
   "apexDescription" : "Oh my I sure do love cooking my bars!",
@@ -46,6 +46,10 @@
       "anchors" : [ "bottom" ]
     }
   ],
+
+  "interactData" : {
+    "baseConfig" : "/interface/scripted/keypad/keypadgui.config"
+  },
 
   "soundEffect" : "/sfx/objects/spookycauldron.ogg",
   "soundEffectRangeMultiplier" : 1,
