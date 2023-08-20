@@ -7,6 +7,7 @@
   "race" : "generic",
   "category" : "crafting",
   "price" : 510,
+  "objectType" : "container",
 
   "apexDescription" : "Oh my I sure do love cooking my bars!",
   "avianDescription" : "Oh my I sure do love cooking my bars!",
@@ -47,9 +48,11 @@
     }
   ],
 
-  "interactData" : {
-    "baseConfig" : "/interface/scripted/keypad/keypadgui.config"
-  },
+  "openSounds" : [ "/sfx/cinematics/ship_upgrade/captain_gripe.ogg" ],
+  "slotCount" : 2,
+  "uiConfig" : "/interface/objectcrafting/tinkersfurnace.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600,
 
   "soundEffect" : "/sfx/objects/spookycauldron.ogg",
   "soundEffectRangeMultiplier" : 1,

@@ -1,5 +1,5 @@
 function init()
-  object.setInteractive(true)
+  --object.setInteractive(true)
   object.setSoundEffectEnabled(false)
 end
 
@@ -11,6 +11,6 @@ function onInteraction(interactSource)
   --object.smash()
   eoiewg = not eoiewg
   object.setSoundEffectEnabled(eoiewg)
-  local reason = "Steam Deck not detected"
-  return { "ShowPopup", { title = "Activation Failed!", message = string.format("^red;Epic failure: %s.", reason), sound = "/sfx/cinematics/ship_upgrade/captain_gripe.ogg"} }
+  --local reason = "Steam Deck not detected"
+  --return { "ShowPopup", { title = "Activation Failed!", message = string.format("^red;Epic failure: %s.", reason), sound = "/sfx/cinematics/ship_upgrade/captain_gripe.ogg"} }
 end
