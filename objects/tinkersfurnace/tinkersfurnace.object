@@ -32,9 +32,7 @@
       "animationCycle" : 0.8,
 
       "spaceScan" : 0.1,
-      "anchors" : [ "bottom" ],
-      "collision" : "solid",
-      "collisionSpaces" : [ [-3, 0], [-2, 0], [-1, 0], [0, 0], [1, 0], [2, 0] ]
+      "anchors" : [ "bottom" ]
     },
     { 
       "imageLayers" : [ { "image" : "tinkersfurnace.png:<color>.<frame>", "fullbright" : true } ],
@@ -45,9 +43,7 @@
       "animationCycle" : 0.8,
 
       "spaceScan" : 0.1,
-      "anchors" : [ "bottom" ],
-      "collision" : "solid",
-      "collisionSpaces" : [ [-3, 0], [-2, 0], [-1, 0], [0, 0], [1, 0], [2, 0] ]
+      "anchors" : [ "bottom" ]
     }
   ],
 
