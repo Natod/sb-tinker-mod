@@ -1,0 +1,21 @@
+{
+  "materialId" : 1001,
+  "materialName" : "searedBrick",
+  "particleColor" : [50, 50, 50, 255],
+  "itemDrop" : "searedBrickMaterial",
+  "shortdescription" : "Seared Bricks",
+  "description" : "Specially crafted bricks used to build a smeltery.",
+  "footstepSound" : "/sfx/blocks/footstep_stone2.ogg",
+  "health" : 6,
+  "category" : "materials",
+
+  "renderTemplate" : "/tiles/classicmaterialtemplate.config",
+  "renderParameters" : {
+    "texture" : "searedBrick.png",
+    "variants" : 6,
+    "lightTransparent" : false,
+    "multiColored" : false,
+    "occludesBelow" : true,
+    "zLevel" : 2860
+  }
+}

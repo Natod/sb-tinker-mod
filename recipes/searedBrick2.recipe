@@ -2,7 +2,7 @@
 {
   "input" : [
     { "item" : "clay", "count" : 1 },
-    { "item" : "sand", "count" : 1 }
+    { "item" : "sand2", "count" : 1 }
   ],
   "output" : {
     "item" : "searedBrick",

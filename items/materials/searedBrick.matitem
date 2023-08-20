@@ -1,0 +1,11 @@
+{
+  "itemName" : "searedBrickMaterial",
+  "price" : 0,
+  "category" : "block",
+  "rarity" : "Common",
+  "inventoryIcon" : "searedBrick.png",
+  "shortdescription" : "Seared Bricks",
+  "description" : "Specially crafted bricks used to build a smeltery.",
+
+  "materialId" : 1001
+}
