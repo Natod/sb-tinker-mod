@@ -1,0 +1,29 @@
+{
+
+  "frameGrid" : {
+    "size" : [32, 24],
+    "dimensions" : [1, 20],
+    "names" : [
+      [ "default" ],
+      [ "gold" ],
+      [ "silver" ],
+      [ "copper" ],
+      [ "iron" ],
+      [ "tungsten" ],
+      [ "titanium" ],
+      [ "durasteel" ],
+      [ "aegisalt" ],
+      [ "ferozium" ],
+      [ "violium" ],
+      [ "solarium" ],
+      [ "diamond" ],
+      [ "14" ],
+      [ "15" ],
+      [ "16" ],
+      [ "17" ],
+      [ "18" ],
+      [ "19" ],
+      [ "20" ]
+    ]
+  }
+}
