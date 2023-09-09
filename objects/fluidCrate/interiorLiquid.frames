@@ -5,6 +5,7 @@
     "dimensions" : [1, 20],
     "names" : [
       [ "default" ],
+      [ "example" ],
       [ "gold" ],
       [ "silver" ],
       [ "copper" ],
@@ -17,7 +18,6 @@
       [ "violium" ],
       [ "solarium" ],
       [ "diamond" ],
-      [ "14" ],
       [ "15" ],
       [ "16" ],
       [ "17" ],

@@ -1,0 +1,37 @@
+{
+    "animatedParts" : {
+      "stateTypes" : {
+        "interiorLiquidType" : {
+            "default" : "example",
+            "states" : {
+                "default" : {"frames" : 1, "cycle" : 0.5 },
+                "example" : {"frames" : 1, "cycle" : 0.5 },
+                "gold" : {"frames" : 1, "cycle" : 0.5 },
+                "silver" : {"frames" : 1, "cycle" : 0.5 },
+                "copper" : {"frames" : 1, "cycle" : 0.5 },
+                "iron" : {"frames" : 1, "cycle" : 0.5 },
+                "tungsten" : {"frames" : 1, "cycle" : 0.5 },
+                "titanium" : {"frames" : 1, "cycle" : 0.5 },
+                "durasteel" : {"frames" : 1, "cycle" : 0.5 },
+                "aegisalt" : {"frames" : 1, "cycle" : 0.5 },
+                "ferozium" : {"frames" : 1, "cycle" : 0.5 },
+                "violium" : {"frames" : 1, "cycle" : 0.5 },
+                "solarium" : {"frames" : 1, "cycle" : 0.5 },
+                "diamond" : {"frames" : 1, "cycle" : 0.5 },
+                "15" : {"frames" : 1, "cycle" : 0.5 },
+                "16" : {"frames" : 1, "cycle" : 0.5 },
+                "17" : {"frames" : 1, "cycle" : 0.5 },
+                "18" : {"frames" : 1, "cycle" : 0.5 },
+                "19" : {"frames" : 1, "cycle" : 0.5 },
+                "20" : {"frames" : 1, "cycle" : 0.5 }
+            }
+        },
+        "exterior" : {
+            "default" : "default",
+            "states" : {
+                "default" : {"frames" : 1, "cycle" : 0.5}
+            }
+        }
+      }
+    }
+}

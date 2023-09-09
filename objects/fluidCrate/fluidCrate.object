@@ -16,31 +16,41 @@
   "inventoryIcon" : "fluidCrate.png",
   "orientations" : [
     {
+      //"imageLayers" : [ {"image":"interiorLiquid.png:example"}, {"image":"fluidCrate.png:default"} ],
       "image" : "fluidCrate.png:default",
       "direction" : "left",
       "flipImages" : true,
 
       "imagePosition" : [-16, 0],
-      "frames" : 1,
-      "animationCycle" : 0.5,
+      //"frames" : 1,
+      //"animationCycle" : 0.5,
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ],
       "collision" : "platform"
     },
     {
+      //"imageLayers" : [ {"image":"interiorLiquid.png:example"}, {"image":"fluidCrate.png:default"} ],
       "image" : "fluidCrate.png:default",
       "direction" : "right",
 
       "imagePosition" : [-16, 0],
-      "frames" : 1,
-      "animationCycle" : 0.5,
+      //"frames" : 1,
+      //"animationCycle" : 0.5,
 
       "spaceScan" : 0.1,
       "anchors" : [ "bottom" ],
       "collision" : "platform"
     }
   ],
+
+
+  "animationFrames" : 1,
+  "animation" : "/objects/fluidCrate/fluidCrate.animation",
+  "animationParts" : { "interiorLiquidType" : "interiorLiquid.png" },
+  "animationPosition" : [-16, 0],
+  "scripts" : ["/objects/fluidCrate/fluidCrate.lua"],
+  "scriptDelta" : 10,
 
   "openSounds" : [ "/sfx/objects/metalbox_open.ogg" ],
   "closeSounds" : [ "/sfx/objects/metalbox_close.ogg" ],
