@@ -8,6 +8,6 @@ function update(dt)
 end
 
 function setAnimationState()
-    animator.setAnimationState("interiorLiquidType","gold")
-    object.setLightColor({255,0,255})  -- this is for testing
+    animator.setAnimationState("interiorLiquidType","moltenViolium", true)
+    -- object.setLightColor({255,0,255})  -- this is for testing
 end

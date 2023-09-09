@@ -6,18 +6,18 @@
             "states" : {
                 "default" : {"frames" : 1, "cycle" : 0.5 },
                 "example" : {"frames" : 1, "cycle" : 0.5 },
-                "gold" : {"frames" : 1, "cycle" : 0.5 },
-                "silver" : {"frames" : 1, "cycle" : 0.5 },
-                "copper" : {"frames" : 1, "cycle" : 0.5 },
-                "iron" : {"frames" : 1, "cycle" : 0.5 },
-                "tungsten" : {"frames" : 1, "cycle" : 0.5 },
-                "titanium" : {"frames" : 1, "cycle" : 0.5 },
-                "durasteel" : {"frames" : 1, "cycle" : 0.5 },
-                "aegisalt" : {"frames" : 1, "cycle" : 0.5 },
-                "ferozium" : {"frames" : 1, "cycle" : 0.5 },
-                "violium" : {"frames" : 1, "cycle" : 0.5 },
-                "solarium" : {"frames" : 1, "cycle" : 0.5 },
-                "diamond" : {"frames" : 1, "cycle" : 0.5 },
+                "moltenGold" : {"frames" : 1, "cycle" : 0.5 },
+                "moltenSilver" : {"frames" : 1, "cycle" : 0.5 },
+                "moltenCopper" : {"frames" : 1, "cycle" : 0.5 },
+                "moltenIron" : {"frames" : 1, "cycle" : 0.5 },
+                "moltenTungsten" : {"frames" : 1, "cycle" : 0.5 },
+                "moltenTitanium" : {"frames" : 1, "cycle" : 0.5 },
+                "moltenDurasteel" : {"frames" : 1, "cycle" : 0.5 },
+                "moltenAegisalt" : {"frames" : 1, "cycle" : 0.5 },
+                "moltenFerozium" : {"frames" : 1, "cycle" : 0.5 },
+                "moltenViolium" : {"frames" : 1, "cycle" : 0.5 },
+                "moltenSolarium" : {"frames" : 1, "cycle" : 0.5 },
+                "moltenDiamond" : {"frames" : 1, "cycle" : 0.5 },
                 "15" : {"frames" : 1, "cycle" : 0.5 },
                 "16" : {"frames" : 1, "cycle" : 0.5 },
                 "17" : {"frames" : 1, "cycle" : 0.5 },
@@ -25,13 +25,33 @@
                 "19" : {"frames" : 1, "cycle" : 0.5 },
                 "20" : {"frames" : 1, "cycle" : 0.5 }
             }
-        },
-        "exterior" : {
-            "default" : "default",
-            "states" : {
-                "default" : {"frames" : 1, "cycle" : 0.5}
+        }
+      },
+      "parts" : {
+        "interiorLiquid" : {
+          "properties" : {
+            "centered" : false
+          },
+  
+          "partStates" : {
+            "interiorLiquidType" : {
+                "default" : {"properties" : {  "image" : "<partImage>:default"}},
+                "example" : {"properties" : {  "image" : "<partImage>:example"}},
+                "moltenGold" : {"properties" : {  "image" : "<partImage>:gold"}},
+                "moltenSilver" : {"properties" : {  "image" : "<partImage>:silver"}},
+                "moltenCopper" : {"properties" : {  "image" : "<partImage>:copper"}},
+                "moltenIron" : {"properties" : {  "image" : "<partImage>:iron"}},
+                "moltenTungsten" : {"properties" : {  "image" : "<partImage>:tungsten"}},
+                "moltenTitanium" : {"properties" : {  "image" : "<partImage>:titanium"}},
+                "moltenDurasteel" : {"properties" : {  "image" : "<partImage>:durasteel"}},
+                "moltenAegisalt" : {"properties" : {  "image" : "<partImage>:aegisalt"}},
+                "moltenFerozium" : {"properties" : {  "image" : "<partImage>:ferozium"}},
+                "moltenViolium" : {"properties" : {  "image" : "<partImage>:violium"}},
+                "moltenSolarium" : {"properties" : {  "image" : "<partImage>:example"}},
+                "moltenDiamond" : {"properties" : {  "image" : "<partImage>:diamond"}}
             }
         }
-      }
+    }
+    }
     }
 }

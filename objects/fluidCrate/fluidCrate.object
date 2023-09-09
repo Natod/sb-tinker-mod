@@ -47,7 +47,7 @@
 
   "animationFrames" : 1,
   "animation" : "/objects/fluidCrate/fluidCrate.animation",
-  "animationParts" : { "interiorLiquidType" : "interiorLiquid.png" },
+  "animationParts" : { "interiorLiquid" : "interiorLiquid.png" },
   "animationPosition" : [-16, 0],
   "scripts" : ["/objects/fluidCrate/fluidCrate.lua"],
   "scriptDelta" : 10,
@@ -55,7 +55,7 @@
   "openSounds" : [ "/sfx/objects/metalbox_open.ogg" ],
   "closeSounds" : [ "/sfx/objects/metalbox_close.ogg" ],
   "slotCount" : 24,
-  "uiConfig" : "/interface/chests/chest<slots>.config",
+  "uiConfig" : "/interface/fluidcontainers/fluidCrate.config",
   "frameCooldown" : 5,
   "autoCloseCooldown" : 3600
 }
