@@ -3,10 +3,15 @@ require "/scripts/util.lua"
 function init()
   --object.setInteractive(true)playsound
   storage.playsound = storage.playsound or false
+  storage.steamdeckcount = storage.steamdeckcount or 0
   object.setSoundEffectEnabled(storage.playsound)
 end
 
 -- storage.playsound = false
+
+function update(dt)
+  storage.steamdeckcount = storage.steamdeckcount + 1 
+end
 
 function onInteraction(interactSource)
   --world.sendEntityMessage(interactSource.sourceId, "deployMech")
