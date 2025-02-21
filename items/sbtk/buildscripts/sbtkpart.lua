@@ -1,14 +1,15 @@
 function build(directory, config, parameters, level, seed)
 
+  local sbtkSourceJson = "/sbtk_util/sbtk_util.config"
   local matType = parameters.sbtkData.material
   local partType = parameters.sbtkData.partType
 
-  local sbtkMatTable = root.assetJson("/sbtk_util/sbtk_util.json")["sbtkToolMatConfig"][matType]
-  local sbtkPartTable = root.assetJson("/sbtk_util/sbtk_util.json")["sbtkPartConfig"][partType]
+  local sbtkMatTable = root.assetJson(sbtkSourceJson)["sbtkToolMatConfig"][matType]
+  local sbtkPartTable = root.assetJson(sbtkSourceJson)["sbtkPartConfig"][partType]
   local sbtkPartInfo = sbtkMatTable.partsConfig[partType]
   --sb.logInfo(sb.print(sbtkPartInfo))
   
-  local baseColors = root.assetJson("/sbtk_util/sbtk_util.json")["baseColors"]
+  local baseColors = root.assetJson(sbtkSourceJson)["baseColors"]
   local matColors = sbtkMatTable.colors
 
   local shortdesc = sbtkMatTable.label .. " " .. sbtkPartTable.label
