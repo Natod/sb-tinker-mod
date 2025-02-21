@@ -1,0 +1,16 @@
+{
+  "itemName" : "sbtk_test",
+  "price" : 0,
+  "sbtkData" : {
+    "material" : "iron",
+    "partType" : "testPart"
+  },
+  "rarity" : "Common",
+  "category" : "craftingMaterial",
+  "inventoryIcon" : "testitem.png",
+  "description" : "-- ERROR --",
+  "shortdescription" : "-- ERROR --",
+  "maxStack" : 1,
+  "builder" : "/items/sbtk/buildscripts/testitem.lua",
+  "itemTags" : [ "reagent" ]
+}

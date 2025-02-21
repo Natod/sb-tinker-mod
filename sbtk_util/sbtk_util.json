@@ -1,0 +1,38 @@
+{
+  "sbtkToolMatConfig" : {
+    "iron" : {
+      "label" : "Iron",
+      "desc" : "Iron!\nIron!\nIron!",
+      "tags" : [ "metal" ],
+      "tier" : 2,
+      "colors" : [
+        "808080", //darkest
+        "a0a0a0",
+        "d0d0d0",
+        "f0f0f0", //brightest
+        "00000000"  //glow outline (add Alpha)
+      ],
+      "partsConfig" : {
+        "testpart" : {
+          
+          "damage" : 12
+        }
+      }
+    }
+  },
+
+  "sbtkPartConfig" : {
+    "testPart" : {
+      "label" : "Test Part",
+      "image" : "/items/sbtk/parts/testitem.png"
+    }
+  },
+
+  "baseColors" : [
+    "960096", //darkest
+    "ff00ff",
+    "ff96ff",
+    "ffd0ff", //brightest
+    "c864c8"  //glow outline
+  ]
+}
