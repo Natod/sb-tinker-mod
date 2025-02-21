@@ -1,9 +1,44 @@
 {
+
+  //possible materials for tool parts
   "sbtkToolMatConfig" : {
+
+    //default material
+    "default" : {
+      "label" : "Default Material",
+      "desc" : "-- ERROR --",
+      "tags" : [ "default" ],
+      "priceMult" : 0.5,
+      //material gained upon breaking down part
+      "deconstructMat" : "money",
+      "tier" : 1,
+      "textColor" : "ff0000",
+      "colors" : [
+        "960096", //darkest
+        "ff00ff",
+        "ff96ff",
+        "ffd0ff", //brightest
+        "c864c8"  //glow outline (add Alpha)
+      ],
+      //specific stats per part type
+      "partsConfig" : {
+        "testPart" : {
+          "desc" : "sbtk part failed to change material",
+          "damage" : 0
+        },
+        "daggerblade" : {
+          "desc" : "sbtk part failed to change material",
+          "damage" : 0
+        }
+      }
+    },
+
     "iron" : {
       "label" : "Iron",
       "desc" : "Iron",
       "tags" : [ "metal" ],
+      "priceMult" : 0.5,
+      "deconstructMat" : "ironbar",
       "tier" : 2,
       "textColor" : "d0d0d0",
       "colors" : [
@@ -17,18 +52,45 @@
         "testPart" : {
           "desc" : "Ability: ^#d0d0d0;Be made of iron.^reset;",
           "damage" : 12
+        },
+        "daggerblade" : {
+          "desc" : "Ability: ^#d0d0d0;cut things^reset;",
+          "damage" : 12
         }
       }
-    }
+    }   
+
   },
 
+  //specify the output part material based on ingredient
+  "sbtkCraftingMatConfig" : {
+    "ironbar" : "iron"
+  },
+
+  //all general part types
   "sbtkPartConfig" : {
     "testPart" : {
       "label" : "Test Part",
-      "image" : "/items/sbtk/parts/testitem.png"
+      "inventoryIcon" : "/items/sbtk/parts/testitem.png",
+      //what the part looks like on the actual tool
+      "partImages" : {
+        "sbtktesttool" : "/items/sbtk/parts/testitem.png"
+      },
+      "matCost" : 1,
+      "priceMult" : 9999
+    },
+    "daggerblade" : {
+      "label" : "Dagger Blade",
+      "inventoryIcon" : "/items/sbtk/parts/sbtkdaggerblade.png",
+      "partImages" : {
+        "sbtkdagger" : "/items/sbtk/tools/partimages/dagger/sbtkdaggerblade.png"
+      },
+      "matCost" : 6,
+      "priceMult" : 0.8
     }
   },
 
+  //part colors in template to be replaced
   "baseColors" : [
     "960096", //darkest
     "ff00ff",
@@ -36,4 +98,6 @@
     "ffd0ff", //brightest
     "c864c8"  //glow outline
   ]
+
+  // /spawnitem sbtkpart 1 '{"sbtkData":{"material":"iron","partType":"daggerblade"}}'
 }

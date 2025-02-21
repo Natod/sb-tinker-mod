@@ -1,7 +1,7 @@
 function build(directory, config, parameters, level, seed)
 
-  local matType = config.sbtkData.material
-  local partType = config.sbtkData.partType
+  local matType = parameters.sbtkData.material
+  local partType = parameters.sbtkData.partType
 
   local sbtkMatTable = root.assetJson("/sbtk_util/sbtk_util.json")["sbtkToolMatConfig"][matType]
   local sbtkPartTable = root.assetJson("/sbtk_util/sbtk_util.json")["sbtkPartConfig"][partType]
@@ -17,7 +17,7 @@ function build(directory, config, parameters, level, seed)
     "^reset;\n" .. sbtkPartInfo.desc .. 
     "\nDamage: " .. sbtkPartInfo.damage
 
-  local img = sbtkPartTable.image .. string.format(
+  local img = sbtkPartTable.inventoryIcon .. string.format(
     "?replace;%s=%s;%s=%s;%s=%s;%s=%s;%s=%s",
     baseColors[1], matColors[1], --darkest
     baseColors[2], matColors[2],
@@ -30,6 +30,7 @@ function build(directory, config, parameters, level, seed)
   parameters.description = desc
   config.inventoryIcon = img
 
+  parameters.sbtkTier = sbtkMatTable.tier
   parameters.sbtkPartInfo = sbtkPartInfo
 
   return config, parameters
