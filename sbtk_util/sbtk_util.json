@@ -2,9 +2,10 @@
   "sbtkToolMatConfig" : {
     "iron" : {
       "label" : "Iron",
-      "desc" : "Iron!\nIron!\nIron!",
+      "desc" : "Iron",
       "tags" : [ "metal" ],
       "tier" : 2,
+      "textColor" : "d0d0d0",
       "colors" : [
         "808080", //darkest
         "a0a0a0",
@@ -13,8 +14,8 @@
         "00000000"  //glow outline (add Alpha)
       ],
       "partsConfig" : {
-        "testpart" : {
-          
+        "testPart" : {
+          "desc" : "Ability: ^#d0d0d0;Be made of iron.^reset;",
           "damage" : 12
         }
       }
