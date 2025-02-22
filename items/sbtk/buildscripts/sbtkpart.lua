@@ -1,22 +1,22 @@
 function build(directory, config, parameters, level, seed)
 
-  local sbtkSourceJson = "/sbtk_util/sbtk_util.config"
+  local sbtkSourceJson = root.assetJson("/sbtk_util/sbtk_util.config")
   local matType = parameters.sbtkData.material
   local partType = parameters.sbtkData.partType
 
-  local sbtkMatTable = root.assetJson(sbtkSourceJson)["sbtkToolMatConfig"][matType]
-  local sbtkPartTable = root.assetJson(sbtkSourceJson)["sbtkPartConfig"][partType]
-  local sbtkPartInfo = sbtkMatTable.partsConfig[partType] or root.assetJson(sbtkSourceJson)["partsConfigDefault"][partType]
+  local sbtkMatTable = sbtkSourceJson["sbtkToolMatConfig"][matType]
+  local sbtkPartTable = sbtkSourceJson["sbtkPartConfig"][partType]
+  local sbtkPartInfo = sbtkMatTable.partsConfig[partType] or sbtkSourceJson["partsConfigDefault"][partType]
   --sb.logInfo(sb.print(sbtkPartInfo))
   
-  local baseColors = root.assetJson(sbtkSourceJson)["baseColors"]
+  local baseColors = sbtkSourceJson["baseColors"]
   local matColors = sbtkMatTable.colors
 
   local shortdesc = sbtkMatTable.label .. " " .. sbtkPartTable.label
 
-  local desc = string.format("Material: ^#%s;", sbtkMatTable.textColor) .. sbtkMatTable.desc .. 
+  local desc = string.format("Material: ^#%s;", sbtkMatTable.textColor) .. sbtkMatTable.label .. "^reset;" ..
     ((partType == "toolcore") and ("\nTier " .. sbtkMatTable.tier) or "") ..
-    "^reset;\n" .. sbtkPartInfo.desc .. 
+    "\n" .. sbtkPartInfo.desc .. 
     ((sbtkPartInfo.damage ~= nil) and ("\nDamage: " .. sbtkPartInfo.damage) or "")
 
   local img = sbtkPartTable.inventoryIcon .. string.format(

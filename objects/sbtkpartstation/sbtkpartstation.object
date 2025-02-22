@@ -1,0 +1,30 @@
+{
+  "objectName" : "sbtkpartstation",
+  "colonyTags" : [],
+  "rarity" : "Essential",
+  "description" : "Craft all SBTinker tool parts at a Part Station!",
+  "shortdescription" : "Part Station",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 200,
+  "objectType" : "container",
+
+  "inventoryIcon" : "sbtkpartstation.png",
+  "orientations" : [
+    {
+      "dualImage" : "sbtkpartstation.png",
+      "imagePosition" : [-16, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "openSounds" : [ "/sfx/cinematics/ship_upgrade/captain_gripe.ogg" ],
+  "slotCount" : 2,
+  "uiConfig" : "/interface/objectcrafting/sbtkpartstation.config",
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600,
+
+  "scripts" : [ "sbtkpartstation.lua" ]
+}
