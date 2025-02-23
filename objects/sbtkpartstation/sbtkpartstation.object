@@ -20,9 +20,12 @@
     }
   ],
 
-  "openSounds" : [ "/sfx/cinematics/ship_upgrade/captain_gripe.ogg" ],
-  "slotCount" : 2,
   "uiConfig" : "/interface/objectcrafting/sbtkpartstation.config",
+  //"interactAction" : "ScriptPane",
+  //"interactData" : "/interface/objectcrafting/sbtkpartstation.config",
+
+  //"openSounds" : [ "/sfx/cinematics/ship_upgrade/captain_gripe.ogg" ],
+  "slotCount" : 2,
   "frameCooldown" : 5,
   "autoCloseCooldown" : 3600,
 

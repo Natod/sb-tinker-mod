@@ -2,22 +2,32 @@ require "/scripts/util.lua"
 
 function init()
   object.setInteractive(true)
-  storage.currentMaterial = {}
+  --storage.materialData = {}
 
-  local sbtkSourceJson = root.assetJson("/sbtk_util/sbtk_util.config")
-  self.sbtkCraftingMatConfig = sbtkSourceJson["sbtkCraftingMatConfig"]
+  --local sbtkSourceJson = root.assetJson("/sbtk_util/sbtk_util.config")
+  --self.sbtkCraftingMatConfig = sbtkSourceJson["sbtkCraftingMatConfig"]
+
+  -- item container interface shenanigans must be done server-side
+  message.setHandler("sbtkPartStationCraft", function(messageName, isLocalEntity, count, item)
+    world.containerConsumeAt(entity.id(), 0, count)
+    world.containerPutItemsAt(entity.id(), item, 1)
+  end)
 end
 
 function update(dt)
-  local matItem1 = world.containerItemAt(entity.id(), 0)
-  if matItem1 and self.sbtkCraftingMatConfig[matItem1.name] then
+  --local mat = world.containerItemAt(entity.id(), 0)
+  --sb.logInfo(sb.print(mat))
+  --[[
+  
+  if mat and self.sbtkCraftingMatConfig[mat.name] then
     -- eg "ironbar" sets to sbtk "iron" material type
-    storage.currentMaterial.material = self.sbtkCraftingMatConfig[matItem1.name]
-    storage.currentMaterial.count = matItem1.count
+    storage.materialData.material = self.sbtkCraftingMatConfig[mat.name]
+    storage.materialData.count = mat.count
   else
-    storage.currentMaterial = {}
+    storage.materialData = {}
   end
-  --sb.logInfo(sb.print(storage.currentMaterial))
+  ]]
+  --sb.logInfo(sb.print(storage.materialData))
 end
 
 function onInteraction(interactSource)

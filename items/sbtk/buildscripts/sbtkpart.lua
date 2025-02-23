@@ -1,5 +1,6 @@
 function build(directory, config, parameters, level, seed)
 
+  local basePrice = 400
   local sbtkSourceJson = root.assetJson("/sbtk_util/sbtk_util.config")
   local matType = parameters.sbtkData.material
   local partType = parameters.sbtkData.partType
@@ -28,9 +29,11 @@ function build(directory, config, parameters, level, seed)
     baseColors[5], matColors[5], --lightest
     baseColors[6], matColors[6] --glow outline
   )
+  local price = math.floor(basePrice * sbtkPartTable.priceMult * sbtkMatTable.priceMult + 0.5)
 
   parameters.shortdescription = shortdesc
   parameters.description = desc
+  parameters.price = price
   config.inventoryIcon = img
 
   parameters.sbtkTier = sbtkMatTable.tier
