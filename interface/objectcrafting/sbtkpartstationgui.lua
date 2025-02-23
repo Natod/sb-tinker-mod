@@ -6,6 +6,7 @@ require "/scripts/interp.lua"
 function init()
     --local steamdecks = require "/objects/tinkersfurnace/tinkersfurnace.lua".storage.steamdeckcount
     self.defaultText2 = config.getParameter("gui").lblText2.value
+    self.defaultText3 = config.getParameter("gui").lblText3.value
     self.materialData = {}
     self.reqMatCount = nil
     self.canCraft = false
@@ -55,13 +56,17 @@ function update(dt)
     if self.materialData.material and self.materialData.count then
         widget.setText(
             "lblText2", 
-            self.sbtkToolMatConfig[self.materialData.material]["label"] .. ": " .. 
+            self.sbtkToolMatConfig[self.materialData.material]["label"]
+        )
+        widget.setText(
+            "lblText3", 
             ((self.canCraft or self.selectedItem == nil) and "" or "^red;") ..
             self.materialData.count .. "^reset;" ..
             (self.reqMatCount ~= nil and ("/" .. self.reqMatCount) or "") 
         )
     else
         widget.setText("lblText2", self.defaultText2)
+        widget.setText("lblText3", self.defaultText3)
     end
     --self.canvas:drawText("Steam Deck", {position={math.random(1,99), math.random(1,99)}},20,{math.random(1,255), math.random(1,255),math.random(1,255),255})
     --self.canvas:drawLine(vec2.sub(vec2.mul(line[1], tileSize), screenPos), vec2.sub(vec2.mul(line[2], tileSize), screenPos), anchorColor, 2)
@@ -151,7 +156,7 @@ function populateItemList(forceRepop)
   function showItem(item, text)
     local enableButton = false
     if item then
-      widget.setText("partTypeDisplay", string.format("%s", text))
+      --widget.setText("partTypeDisplay", string.format("%s", text))
     end
     widget.setButtonEnabled("btnConfirm", true)
   end
