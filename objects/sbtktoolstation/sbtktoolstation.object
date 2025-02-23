@@ -1,0 +1,29 @@
+{
+  "objectName" : "sbtktoolstation",
+  "colonyTags" : [],
+  "rarity" : "Essential",
+  "description" : "Craft all SBTinker tools out of tool parts.",
+  "shortdescription" : "Tool Station",
+  "race" : "generic",
+  "category" : "crafting",
+  "price" : 200,
+  "objectType" : "container",
+
+  "inventoryIcon" : "sbtktoolstation.png",
+  "orientations" : [
+    {
+      "dualImage" : "sbtktoolstation.png",
+      "imagePosition" : [-16, 0],
+
+      "spaceScan" : 0.1,
+      "anchors" : [ "bottom" ]
+    }
+  ],
+
+  "uiConfig" : "/interface/objectcrafting/sbtktoolstation.config",
+  "slotCount" : 2,
+  "frameCooldown" : 5,
+  "autoCloseCooldown" : 3600,
+
+  "scripts" : [ "sbtktoolstation.lua" ]
+}
