@@ -1,0 +1,9 @@
+[
+
+  {
+    "op" : "add",
+    "path" : "/labels/sbtkpart",
+    "value" : "^#63987e;[SBTinker Part]^reset;"
+  }
+
+]

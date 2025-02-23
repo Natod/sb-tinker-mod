@@ -6,7 +6,7 @@
     "partType" : "testPart"
   },
   "rarity" : "Common",
-  "category" : "craftingMaterial",
+  "category" : "sbtkpart",
   "inventoryIcon" : "testitem.png",
   "description" : "-- ERROR --",
   "shortdescription" : "-- ERROR --",
