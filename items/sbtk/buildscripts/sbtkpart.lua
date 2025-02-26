@@ -18,7 +18,8 @@ function build(directory, config, parameters, level, seed)
   local desc = string.format("Material: ^#%s;", sbtkMatTable.textColor) .. sbtkMatTable.label .. "^reset;" ..
     ((partType == "toolcore") and ("\nTier " .. sbtkMatTable.tier) or "") ..
     "\n" .. sbtkPartInfo.desc .. 
-    ((sbtkPartInfo.damage ~= nil) and ("\nDamage: " .. sbtkPartInfo.damage) or "")
+    ((sbtkPartInfo.dmgMult ~= nil ) and ("\nDamage Multiplier: x" .. sbtkPartInfo.dmgMult) or "") ..
+    ((sbtkPartInfo.dmgFlat ~= nil and sbtkPartInfo.dmgFlat ~= 0 ) and "\nFlat Damage: " .. sbtkPartInfo.dmgFlat or "")
 
   local img = sbtkPartTable.inventoryIcon .. string.format(
     "?replace;%s=%s;%s=%s;%s=%s;%s=%s;%s=%s;%s=%s",
