@@ -7,8 +7,10 @@ require "/items/buildscripts/abilities.lua"
 function build(directory, config, parameters, level, seed)
 
   local sbtkSourceJson = root.assetJson("/sbtk_util/sbtk_util.config")
-  local sbtkPartType = parameters.sbtkPartType
-  --local sbtkToolPartConfig = sbtkSourceJson[sbtkPartType]["config"]
+  local sbtkToolMatConfig = sbtkSourceJson.sbtkToolMatConfig
+  local sbtkToolType = parameters.sbtkToolType or config.sbtkToolType
+  local sbtkToolPartConfig = sbtkSourceJson.sbtkToolPartConfig[sbtkToolType]
+  local sbtkConfig = parameters.sbtkConfig or config.sbtkConfig
 
   local configParameter = function(keyName, defaultValue)
     if parameters[keyName] ~= nil then
@@ -31,6 +33,28 @@ function build(directory, config, parameters, level, seed)
   --]]
   
   -- overwrite the config with whatever was in the config for that part
+
+  local dmgMult = 1
+  local dmgFlat = 0
+  for k,v in pairs(sbtkToolPartConfig.parts) do 
+    local _pType = v[1]
+    local _pName = _pType .. "." .. v[2]
+    local _pMat = v[3]
+    local _pMatTable = sbtkToolMatConfig[sbtkConfig.partMaterials[_pName]]
+
+    local _pdmgMult = _pMatTable.partsConfig[_pType]["dmgMult"]
+    if _pdmgMult then
+      dmgMult = dmgMult * _pdmgMult
+    end
+
+    local _pdmgFlat = _pMatTable.partsConfig[_pType]["dmgFlat"]
+    if _pdmgFlat then
+      dmgFlat = dmgFlat + _pdmgFlat
+    end
+    parameters.description = dmgMult .. dmgFlat
+  end
+
+
   --[[
   for k,v in pairs(sbtkToolPartConfig) do 
     config[k] = v

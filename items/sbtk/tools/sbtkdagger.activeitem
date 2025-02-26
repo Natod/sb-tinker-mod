@@ -1,6 +1,6 @@
 {
   "itemName" : "sbtkdagger",
-  "sbtkPartType" : "sbtkdagger",
+  "sbtkToolType" : "sbtkdagger",
   "price" : 320,
   "maxStack" : 1,
   "level" : 0,
@@ -11,12 +11,21 @@
   "category" : "dagger",
   "twoHanded" : false,
   "itemTags" : ["weapon","melee","dagger"],
+
+  "sbtkConfig" : {
+    "partMaterials" : {
+      "daggerblade.1" : "default",
+      "swordhandle.1" : "default",
+      "toolcore.1" : "default"
+    }
+  },
+
   "basePrice" : 200,
-  "inventoryIcon" : "items/sbtk/tools/partimages/dagger/sbtkdaggericon.png.png",
+  "inventoryIcon" : "items/sbtk/tools/partimages/dagger/sbtkdaggericon.png",
   "animation" : "/items/active/weapons/melee/dagger/dagger.animation",
   "animationParts" : {
     "handle": "items/sbtk/tools/partimages/dagger/sbtkdaggerblade.png",
-    "blade" : "items/sbtk/tools/partimages/dagger/sbtkdaggerblade.png.png"
+    "blade" : "items/sbtk/tools/partimages/dagger/sbtkdaggerhandlepng"
   },
   "animationCustom" : {
     "sounds" : {
