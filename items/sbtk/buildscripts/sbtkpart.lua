@@ -10,7 +10,7 @@ function build(directory, config, parameters, level, seed)
   local sbtkPartInfo = sbtkMatTable.partsConfig[partType] or sbtkSourceJson["partsConfigDefault"][partType]
   --sb.logInfo(sb.print(sbtkPartInfo))
   
-  local baseColors = sbtkSourceJson["baseColors"]
+  local baseColors = sbtkSourceJson["baseColors"][1]
   local matColors = sbtkMatTable.colors
 
   local shortdesc = sbtkMatTable.label .. " " .. sbtkPartTable.label

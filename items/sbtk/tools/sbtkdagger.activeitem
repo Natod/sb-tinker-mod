@@ -13,19 +13,26 @@
   "itemTags" : ["weapon","melee","dagger"],
 
   "sbtkConfig" : {
+    // IMPORTANT: [material, color number]
     "partMaterials" : {
-      "daggerblade.1" : "default",
-      "swordhandle.1" : "default",
-      "toolcore.1" : "default"
-    }
+      "daggerblade.1" : ["iron", 1],
+      "swordhandle.1" : ["copper", 2],
+      "toolcore.1" : ["copper", 3]
+    },
+    "toolBodyImg" : "blade",
+    "toolSlotImg" : "handle",
+    "elementalSlot" : "default"
   },
 
   "basePrice" : 200,
-  "inventoryIcon" : "items/sbtk/tools/partimages/dagger/sbtkdaggericon.png",
+  "inventoryIcon" : [{
+    "image" : "/items/sbtk/tools/partimages/dagger/sbtkdaggericonmulti.png",
+    "position" : [0,0]
+  }],
   "animation" : "/items/active/weapons/melee/dagger/dagger.animation",
   "animationParts" : {
-    "handle": "items/sbtk/tools/partimages/dagger/sbtkdaggerblade.png",
-    "blade" : "items/sbtk/tools/partimages/dagger/sbtkdaggerhandlepng"
+    "handle": "/items/sbtk/tools/partimages/dagger/sbtkdaggerslot.png",
+    "blade" : "/items/sbtk/tools/partimages/dagger/sbtkdaggermulti.png"
   },
   "animationCustom" : {
     "sounds" : {
